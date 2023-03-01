@@ -1,0 +1,15 @@
+.container{
+    height: 100vh;
+    padding-top: 3em;
+
+}
+
+.main{
+    background-color: whitesmoke;
+    width: 75%;
+    margin:0 auto;
+}
+
+p{
+    font-size: 150%;
+}
