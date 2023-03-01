@@ -1,36 +1,29 @@
-/*
-    Method used to achieve feature: Intersection Observer WEB API
-    DATE:01/03/2023
-*/
+import { convertHtmlCollectionstoArray, observeAllElements } from './Utils/functions.js';
 
-//  Observer to Advertisement video slots
+const advertisementSlots = document.getElementsByClassName("video-advertisment");
+const advertisementSlots_Array = convertHtmlCollectionstoArray(advertisementSlots);
+
+//  Observer to Advertisement Video Slots
 const advertisementVideoObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show-video-advertisment", entry.isIntersecting)
-        if (entry.isIntersecting) 
+        if (entry.isIntersecting) {
             advertisementVideoObserver.unobserve(entry.target)
+        }
     })
 },
     {
         threshold: 0.5,
     }
 )
-const advertisementSlots = document.getElementsByClassName("video-advertisment")
 
-const advertisementSlots_Array = Array.prototype.slice.call(advertisementSlots)
-advertisementSlots_Array.forEach((slot) => {
-    advertisementVideoObserver.observe(slot)
-})
+observeAllElements(advertisementSlots_Array, advertisementVideoObserver);
 
-/*
-    For Paragraphs animation Intersection observer
-    The threshold here is 1 == 100%
-    This means show-para will be added iff its 100%. 
 
-    entry.isIntersecting will return us a boolean
-*/
+const paragraphs = document.getElementsByClassName("para");
+const paragraphs_Array = convertHtmlCollectionstoArray(paragraphs);
 
-//  Observer to paragraphs in the Blog
+//  Observer to paragraphs in the Blog Article
 const paraObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show-para", entry.isIntersecting)
@@ -40,19 +33,13 @@ const paraObserver = new IntersectionObserver(entries => {
     })
 },
     {
-        threshold: 1,
-        rootMargin: "100px",
+        threshold: 0.2,
     }
 )
 
-const paragraphs = document.getElementsByClassName("para")
-console.log(paragraphs)
+observeAllElements(paragraphs_Array, paraObserver);
 
-// Convert Htmldocuments to Array
-let arr = Array.prototype.slice.call(paragraphs)
-arr.forEach((para) => {
-    paraObserver.observe(para)
-    console.log("hello")
-})
-
-
+/*
+    Method used to achieve feature: Intersection Observer WEB API
+    DATE:01/03/2023
+*/
