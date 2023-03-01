@@ -3,7 +3,7 @@
 
  - - - -
  
- > ##Eshaan Dabasiya 
+ > Eshaan Dabasiya 
  >> Ahmedabad University
  - - - -
  
