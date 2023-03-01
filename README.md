@@ -1,16 +1,20 @@
 # Lazy-Loaded-Video-Player
+### Deployed Website: https://adsolut-media.netlify.app/
+
  - - - -
- > Eshaan Dabasiya 
+ 
+ > ##Eshaan Dabasiya 
  >> Ahmedabad University
+ - - - -
+ 
 This is a small project in which I have used Intersection web api to lazy load heavy data consuming multimedia video. The video will be loaded on the users screen once the user is on more than 50% view height
 
-# Deployed Website: https://adsolut-media.netlify.app/
 
-Tech Stack    | 
+Tech Stack    | FRONT/BACK
 ------------- | -------------
 HTML          | Frontend
-VANILA CSS    | Frontend
-VANILA JAVASCRIPT   | Backend
+CSS           | Frontend
+JAVASCRIPT    | Backend
 
  - - - -
 References
