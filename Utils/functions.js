@@ -1,13 +1,10 @@
 // Convert Htmldocuments to Array
 export function convertHtmlCollectionstoArray(array) {
-
     return Array.prototype.slice.call(array)
-
 }
 
 // To create observers for paragraphs and advertisments
 export function createObserver(objectToObserve, threshold = 1) {
-
     return (
         new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -22,7 +19,6 @@ export function createObserver(objectToObserve, threshold = 1) {
             }   
         )
     )
-
 }
 
 // To Attach observer to each of the element that is matched with the classname/id

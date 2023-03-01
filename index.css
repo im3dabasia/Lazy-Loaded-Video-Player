@@ -34,7 +34,6 @@
     text-transform: capitalize;
     background-color: #c0c0c0;
     margin: 2em 0em 2em 0em;
-
 }
 
 .student-info {
@@ -53,21 +52,18 @@
     padding: 2em;
     opacity: 0;
     transform: translateX(-50px);
-
 }
 
 .show-video-advertisment {
     opacity: 1;
     transform: translateX(-25px);
     transition: transform 0.5s ease-in-out;
-
 }
 
 .show-para{
     opacity:1;
     transform: translateX(0px);
     transition: transform 0.5s ease-in-out;
-
 }
 
 /*
@@ -81,7 +77,6 @@
     box-shadow: 10px 5px 5px gray;
     text-transform: capitalize;
 }
-
 
 /*
     For Responsiveness of the website
@@ -97,6 +92,11 @@
     .student-info {
         font-size: 0.5em;
     }
+    .main-blog {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5em;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -108,7 +108,6 @@
     .student-info {
         font-size: 0.5em;
     }
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
