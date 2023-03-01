@@ -8,6 +8,8 @@
     width: 75%;
     margin: 0 auto;
     padding: 2em;
+    border: 1px dotted black;
+    border-radius: 10px;
 }
 
 .para {
@@ -51,31 +53,19 @@
     justify-content: center;
     padding: 2em;
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(200px);
 }
 
 .show-video-advertisment {
     opacity: 1;
-    transform: translateX(-25px);
-    transition: transform 0.5s ease-in-out;
+    transform: translateX(-30px);
+    transition: transform 1s ease-in-out;
 }
 
 .show-para{
     opacity:1;
     transform: translateX(0px);
     transition: transform 0.5s ease-in-out;
-}
-
-/*
-    DARK MODE AND LIGHT MODE FEATURE
-*/
-.website-theme{
-    padding: 1em 1em;
-    margin-bottom: 1em;
-    border: 1px solid black;
-    border-radius: .5rem;
-    box-shadow: 10px 5px 5px gray;
-    text-transform: capitalize;
 }
 
 /*
@@ -96,6 +86,9 @@
         width: 90%;
         margin: 0 auto;
         padding: 0.5em;
+    }
+    #my-video{
+        height: 200px;
     }
 }
 
