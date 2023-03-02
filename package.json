@@ -1,0 +1,27 @@
+{
+  "name": "adsolut-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/im3dabasia/Lazy-Loaded-Video-Player.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/im3dabasia/Lazy-Loaded-Video-Player/issues"
+  },
+  "homepage": "https://github.com/im3dabasia/Lazy-Loaded-Video-Player#readme",
+  "dependencies": {
+    "@hapi/cryptiles": "^6.0.1",
+    "can-autoplay": "^3.0.2",
+    "extend": "^3.0.2",
+    "video.js": "^8.0.4",
+    "videojs-contrib-ads": "^7.1.0"
+  }
+}

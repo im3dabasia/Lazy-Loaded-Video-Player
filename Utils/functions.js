@@ -1,6 +1,6 @@
 // Convert Htmldocuments to Array
-export function convertHtmlCollectionstoArray(array) {
-    return Array.prototype.slice.call(array)
+export function convertHtmlCollectionstoArray(htmlCollection) {
+    return Array.prototype.slice.call(htmlCollection)
 }
 
 // To create observers for paragraphs and advertisments

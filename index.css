@@ -47,12 +47,12 @@
 }
 
 .video-advertisment {
+    opacity: 0;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     padding: 2em;
-    opacity: 0;
     transform: translateX(200px);
 }
 
@@ -87,7 +87,7 @@
         margin: 0 auto;
         padding: 0.5em;
     }
-    #my-video{
+    #content_video{
         height: 200px;
     }
 }
